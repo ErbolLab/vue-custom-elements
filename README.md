@@ -1,4 +1,5 @@
-This project shows how to convert and bundle Vue Components into Web Components using [Vue Custom Element](https://github.com/karol-f/vue-custom-element)
+### Vue Custom Elements
+This project shows how to _convert_ and _bundle_ Vue Components into Web Components using [Vue Custom Element](https://github.com/karol-f/vue-custom-element)
 
 ### Bundling
 [Vue Custom Element](https://github.com/karol-f/vue-custom-element) provides a great way of converting Vue Components into Web Components.  
