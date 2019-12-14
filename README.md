@@ -1,16 +1,21 @@
-# vue-custom-elements
+This project shows how to convert and bundle Vue Components into Web Components using [Vue Custom Element](https://github.com/karol-f/vue-custom-element)
 
-## Project setup
-```
-npm install
-```
+### Bundling
+[Vue Custom Element](https://github.com/karol-f/vue-custom-element) provides a great way of converting Vue Components into Web Components.  
+But in order to use them in _non-Vue_ projects, we have to bundle them first.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+So the logic here, that in `main.js` we will register all our components using `Vue.customElement`, but we will _not bootstrap_ the Vue application itself.
 
-### Compiles and minifies for production
+To make a bundle we can run the following command:
 ```
 npm run build
+```
+
+It will create a `dist/components.js` file that then we can simply _import_ in any non-Vue project like this:
+
+```jsx
+import './components.js';
+
+// in template
+<your-web-component></your-web-component>
 ```
