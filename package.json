@@ -2,13 +2,16 @@
   "name": "vue-custom-elements",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/components.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.4.3",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-custom-element": "^3.2.12",
+    "vue-dynamic-star-rating": "^1.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
